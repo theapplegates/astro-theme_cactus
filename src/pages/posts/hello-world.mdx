@@ -7,6 +7,7 @@ tags: ["example", "blog", "cool"]
 ---
 
 import { Image } from "@astrojs/image/components";
+import { Picture } from '@astrojs/image/components';
 
 ## Hello World
 
@@ -18,6 +19,8 @@ Following is an example blog post written in an md file. You can find me @ src/p
 	width={550}
 	height={460}
 />
+
+<Picture src={import("src/assets/images/egg-meal.jpg")} widths={[100, 200, 400, 800, 1600]} sizes="(max-width: 1600px) 100vw, 1600px" alt="descriptive text" />
 
 ## Using some markdown elements
 
